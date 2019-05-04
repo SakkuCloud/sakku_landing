@@ -225,9 +225,36 @@ header.main_header .main_nav li.register a {
   float: right;
   padding: 15px;
   text-align: center;
+  position: relative;
+}
+.section2 .img::before {
+  content: "";
+  background-image: url("../img/pay_as_pttrn.png");
+  position: absolute;
+  width: 500px;
+  height: 570px;
+  top: 64px;
+  right: 50px;
+  z-index: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.section2 .img::after {
+  content: "";
+  background-image: url("../img/darsad.png");
+  position: absolute;
+  width: 380px;
+  height: 570px;
+  top: -5px;
+  right: 0px;
+  z-index: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .section2 .img img {
   width: 70%;
+  position: relative;
+  z-index: 10000;
 }
 .section2 .content {
   width: 50%;
@@ -271,9 +298,24 @@ header.main_header .main_nav li.register a {
   float: left;
   padding: 15px;
   text-align: center;
+  position: relative;
+}
+.section3 .img::before {
+  content: "";
+  background-image: url("../img/coll_dev_pttrn.png");
+  position: absolute;
+  width: 500px;
+  height: 570px;
+  top: 64px;
+  right: 76px;
+  z-index: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .section3 .img img {
   width: 70%;
+  position: relative;
+  z-index: 1000;
 }
 .section3 .content {
   width: 50%;
@@ -303,9 +345,24 @@ header.main_header .main_nav li.register a {
   float: right;
   padding: 15px;
   text-align: center;
+  position: relative;
+}
+.section4 .img::before {
+  content: "";
+  background-image: url("../img/trans_app_pttrn.png");
+  position: absolute;
+  width: 528px;
+  height: 570px;
+  top: 53px;
+  right: 27px;
+  z-index: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .section4 .img img {
   width: 70%;
+  position: relative;
+  z-index: 1000;
 }
 .section4 .content {
   width: 50%;
