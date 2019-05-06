@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SAKKU cloud platform</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/scrollreveal.js"></script>
+    <script src="./assets/js/SplitText.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
 </head>
 
 <body>
@@ -16,10 +21,10 @@
         </div>
         <nav class="main_nav left">
             <ul>
-                <li class="register"><a href="">پیش ثبت نام</a></li>
+                <li class="register"><a href="#registraton">پیش ثبت نام</a></li>
                 <li><a href="">بلاگ</a></li>
                 <li><a href="">درباره ما</a></li>
-                <li><a href="">ارتباط با ما</a></li>
+                <li><a href="#contact_us">ارتباط با ما</a></li>
             </ul>
         </nav>
     </header>
@@ -32,11 +37,11 @@
             </div>
             <div class="feature">
                 <header>
-                    <h3>ویژگی ها و امکانات</h3>
+                    <a href="#feature_details">ویژگی ها و امکانات</a>
                 </header>
             </div>
         </section>
-        <section class=" box_padding feature_details">
+        <section class=" box_padding feature_details" id="feature_details">
             <header>
                 <h3>ویژگی های سکّو</h3>
                 <p>
@@ -166,7 +171,7 @@
             </p>
             <img src="./assets/img/section5.png" alt="">
         </section>
-        <section class="registration box_padding">
+        <section class="registration box_padding" id="registraton">
             <h3>
                 اولین نفر باشید
             </h3>
@@ -174,35 +179,37 @@
                 که از راه‌اندازی سکّو با خبر و از پیشنهاد‌‌های ویژه ما بهرمند می‌شوید.
             </p>
             <div>
-                <input type="text" placeholder="پست الکترونیک خود را وارد کنید.">
-                <button>ثبت نام</button>
+                <input type="text" id="earlyaccesss_email" placeholder="پست الکترونیک خود را وارد کنید.">
+               
+                <button class="get_link">ثبت نام</button>
+                <p class="alert-msg"></p>
             </div>
         </section>
-        <section class="help box_padding clearfix">
+        <section class="help box_padding clearfix " id="contact_us">
             <h3>
                 نیاز به راهنمایی بیشتری دارید؟
             </h3>
             <div class="right">
                 <img src="./assets/img/slack.png" alt="">
-                <p>شما می‌توانید در <a href="">گروه Slack</a> از پشتیبابان فنی سوالات خود را بپرسید</p>
+                <p>شما می‌توانید در <a href="https://join.slack.com/t/sakku/shared_invite/enQtNDk5NTE5MTQ4NDg1LWFmNWI5NTJjM2FlZWM5NTM2ZWFjYmE1M2Y0ZjAwMTE5M2QxNDJiM2QwYTk4M2JmNTViNmNlNDQ5MDU0ZjFhMjU" target="_blank">گروه Slack</a> از پشتیبابان فنی سوالات خود را بپرسید</p>
             </div>
             <div class="left">
                 <img src="./assets/img/email.svg" alt="">
 
                 <p>
-                    همچنین ایمیل <a href=""> hi@sakku.cloud </a> پاسخگوی سوالات شما می‌باشد
+                    همچنین ایمیل <a href="mailto:hi@sakku.cloud"> hi@sakku.cloud </a> پاسخگوی سوالات شما می‌باشد
                 </p>
             </div>
         </section>
     </main>
     <footer class="wrapper main_footer box_padding clearfix">
         <div class="right">
-            <img src="./assets/img/footer_logo.png" alt="">
-            <img src="./assets/img/fanap.png" alt="">
+            <a href="#" target="_blank"><img src="./assets/img/footer_logo.png" alt=""></a>
+            <a href="https://www.fanap.ir" target="_blank"><img src="./assets/img/fanap.png" alt=""></a>
         </div>
         <div class="left">
             <p>تمامی حقوق متعلق به پدیدآورندگان سکو می‌باشد</p>
-            <p>Design by: Colorz Design Studio</p>
+            <p>Design by: <a href="https://www.wearecolorz.com" target="_blank">Colorz Design Studio</a></p>
         </div>
     </footer>
 
