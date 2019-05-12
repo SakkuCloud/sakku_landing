@@ -1,3 +1,4 @@
+
 header.main_header
     padding: 0 100px;   
     position: absolute;
@@ -53,11 +54,12 @@ header.main_header
         .intro
             h2  
                 color:#000
-                font-size: 50px;
+                font-size: 4.167rem;
                 font-weight: bold
             p
-                font-size: 30px;
+                font-size: 2.5rem;
                 line-height: 1.5
+                padding-left: 480px;
         .feature
             background-image: url('../img/cloud.png')
             height 600px;
@@ -69,7 +71,8 @@ header.main_header
                 position relative
                 z-index 1000
                 margin-right: 43px;
-
+                &:hover::before
+                    background-color rgba(0, 86, 255, .9)
                 &::before
                     content: " "
                     width: 83px
@@ -79,6 +82,7 @@ header.main_header
                     position: absolute
                     z-index -1
                     opacity 0.76
+                    transition: all .2s
                 &::after
                     content: " "
                     width: 15px
@@ -90,7 +94,7 @@ header.main_header
                     top -10px
                     right: -10px
                 a
-                    font-size 20px
+                    font-size 1.667rem
                     margin: 35px 28px
                     font-weight: bold;
                     display: block
@@ -140,16 +144,16 @@ header.main_header
                     opacity 0.76
             h3
                 color:colors.black
-                font-size: 42px;
+                font-size: 3.5rem;
                 font-weight: bold
                 z-index 1
                 margin-top: 16px;
                 margin-right: 56px;
             p
-                font-size: 24px;
+                font-size: 2rem;
                 color #424242
                 margin-right: 150px
-               
+                padding-left: 10px
             img 
                 float left
                 margin-top: 28px;
@@ -167,11 +171,11 @@ header.main_header
                 position relative
                 z-index 100000
                 h3
-                    font-size: 24px
+                    font-size: 2rem
                     color: #1e88e5
                     font-weight: bold
                 p
-                    font-size: 20px;
+                    font-size: 1.667rem;
                     font-weight: normal;
                     line-height: 2.15;
                     color: #393939;
@@ -236,16 +240,16 @@ header.main_header
         float left
         padding-top: 100px
         h3
-            font-size: 27px;
+            font-size: 2.25rem;
             font-weight: bold
             color#393939
         p
-            font-size: 20px
+            font-size: 1.667rem
             line-height: 2.05;
             padding-right: 40px
         span 
             display: inline-block;
-            font-size: 73px;
+            font-size: 6rem;
             color: #393939;
             margin-right: 40px;
             border-top: 2px solid #3e3e3e;
@@ -255,7 +259,7 @@ header.main_header
             font-weight: bold;
             padding-top: 5px;
         p:last-child
-            font-size: 23px
+            font-size: 1.917rem
             font-weight: bold
             color#393939
 .section3
@@ -289,12 +293,12 @@ header.main_header
         float right
         padding-top: 100px
         h3
-            font-size: 36px;
+            font-size: 3rem;
             font-weight: bold
             color#424242
             line-height: 1.3;
         p
-            font-size: 20px
+            font-size: 1.677rem
             line-height: 2.05;
             padding-left: 80px
             margin-top: 15px
@@ -330,12 +334,12 @@ header.main_header
         padding-top: 100px
         padding-right: 20px
         h3
-            font-size: 36px;
+            font-size: 3rem;
             font-weight: bold
             color#424242
             line-height: 1.3;
         p
-            font-size: 20px
+            font-size: 1.677rem
             line-height: 2.05;
             padding-left: 80px
             margin-top: 15px
@@ -347,7 +351,7 @@ header.main_header
     img 
         width: 50%
     h3
-        font-size: 36px
+        font-size: 3rem
         font-weight: bold
         color: #424242
     p 
@@ -363,11 +367,11 @@ header.main_header
     text-align: center
     position relative
     h3
-        font-size: 36px
+        font-size: 3rem
         font-weight: bold
         color: #fff
     p
-        font-size: 20px
+        font-size: 1.677rem
         color #ffffff
         margin-bottom: 50px
     div
@@ -378,12 +382,15 @@ header.main_header
             padding: 10px 10px;
             width: 416px;
             font-family: IRANYekan
-            font-size: 16px
+            font-size: 1.34rem
             color: #fff
             &::placeholder ,
             &::-ms-input-placeholder,  
             &::-ms-input-placeholder
                 color: #9fa8da
+            &:hover,
+            &:focus
+                border-color: #fff
         button 
             border:none
             z-index 10000
@@ -392,18 +399,22 @@ header.main_header
             border-radius: 4px
             color: #403cb7
             background-color: #ffffff
-            font-size: 18px
+            font-size: 1.5rem
             font-family: IRANYekan
             padding: 9px 47px;
             margin-right: 10px;
             cursor pointer
+            transition: all .2s
+            &:hover
+                background-color #ffc32c
+
 section.help
     text-align: center
     padding-top: 80px
     background-color: #fbfbfb
 
     h3  
-        font-size: 30px
+        font-size: 2.5rem
         font-weight: bold
         color #393939
     div.left
@@ -419,7 +430,7 @@ section.help
             width: 65px
             height 65px
         p
-            font-size: 22px;
+            font-size: 1.84rem;
             line-height: 2.09;
             color: #393939;
             a
@@ -442,8 +453,11 @@ section.help
         text-align: left 
         p,a
             color: #757575
-            font-size: 15px
+            font-size: 1.25rem
             line-height: 1.6
             transition: all .3s
         a:hover
             color:#403cb7
+
+
+@import './responsive.styl'
