@@ -70,9 +70,20 @@ $(document).ready(function () {
 
                 },
                 error: function (e) {
-                    $(".alert-msg").replaceWith("<div class='alert-msg danger_error'>" + e.responseJSON.message + "</div>");
-                    $('.get_link').prop("disabled", false);
-                    $('.get_link').html('ارسال اطلاعات');
+                    if (e.responseJSON === undefined) {
+                        $(".alert-msg").replaceWith("<div class='alert-msg danger_error'>ایمیل شما معتبر نمی باشد.</div>");
+                        $('.get_link').prop("disabled", false);
+                        $('.get_link').html('ارسال اطلاعات');
+                    }
+                    else {
+                        if (e.responseJSON.code === 409) {
+                            $(".alert-msg").replaceWith("<div class='alert-msg danger_error'>" + e.responseJSON.result + "</div>");
+                        }
+                        else
+                            $(".alert-msg").replaceWith("<div class='alert-msg danger_error'>ایمیل شما معتبر نمی باشد.</div>");
+                        $('.get_link').prop("disabled", false);
+                        $('.get_link').html('ارسال اطلاعات');
+                    }
                 }
             });
         }
@@ -94,7 +105,7 @@ $(document).ready(function () {
 
 
     $(".toggle_menu").on("click", function () {
-        
+
         $(".main_nav_responsive div").show();
         $(".close").on("click", function () {
             $(".main_nav_responsive div").hide();
