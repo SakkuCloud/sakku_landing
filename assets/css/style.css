@@ -140,9 +140,9 @@ header.main_header .main_nav li.register a {
   background-color: #fff;
   position: absolute;
   right: 100px;
-  bottom: -60px;
+  bottom: -77px;
   width: 520px;
-  height: 50px;
+  height: 80px;
 }
 .wrapper section.feature_details header {
   background-image: url("../img/dot_pttrn.png");
