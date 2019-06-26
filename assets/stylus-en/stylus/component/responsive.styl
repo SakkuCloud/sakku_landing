@@ -1,0 +1,224 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) 
+    body
+        font-size: 10px!important
+    .main_nav_responsive
+        display: block
+        position relative
+        margin-top: 45px
+        button 
+            font-size: 17px;
+            color: colors.black;
+            padding: 5px 15px;
+            transition: all .2s
+            font-family: IRANYekan
+            &:hover
+                    background-color: colors.black
+                    color:colors.white
+        div
+            display none
+            position: fixed
+            right 0
+            left 0
+            top: 0
+            bottom: 0
+            background-color rgba(0,0,0,.8)
+            text-align: center
+            ul
+                margin-top: 30px
+                li
+                    padding: 20px
+                    text-align: center
+                    a
+                        color: colors.white
+                        font-size: 1.5rem
+                        display: inline-block
+                        width: 100%
+                        &:hover
+                            background-color: colors.white
+                            color: colors.black
+            button 
+                position: absolute
+                bottom: 20px
+                margin: 0 auto
+                left 45%
+        button 
+            border:none
+            background-color: transparent
+            outline: none
+    header.main_header
+        padding: 0 15px
+    .box_padding
+        padding: 0 15px
+    .wrapper section.intro_details 
+        padding-bottom: 100px
+        .feature
+            background-position: center;
+            height 540px
+            header 
+                margin-top: 35px
+        .intro 
+            h2
+                font-size: 3.2em
+                line-height: 1.5;
+                margin-bottom: 30px;
+
+            p
+                font-size: 2em
+                padding-left: 0
+    .wrapper section.feature_details 
+        header        
+            padding-right: 25px
+            h3
+                margin-right: 25px
+            p
+                font-size: 1.5em
+                margin-right: 60px
+            img 
+                margin-top: 26px;
+                margin-left: 21px;
+        ul
+            li
+                width: 100%
+            li:nth-child(2n)
+                margin-right: 0
+            li:nth-child(2n-1)
+                margin-top: 0
+                margin-
+    .img
+        width: 100%!important
+        margin-top: 100px
+    .content
+        width: 100%!important
+    .main_nav
+        display none
+    .section2 
+        .img::before
+            top -55px
+        .img::after
+            width: 340px
+    .section3,.section4
+        padding-bottom: 130px
+    .section5
+        padding-top: 100px
+        padding-bottom: 100px
+
+        p
+            padding:15px
+        img 
+            width: 100%
+    .registration
+        padding-bottom: 50px
+        padding-top: 50px
+        div 
+            input
+                width: 325px
+                margin-bottom: 20px
+    section.help 
+        div
+            width: 100%!important
+            padding: 60px  15px!important
+    footer 
+        div
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            img 
+                width: 100%
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) 
+    body
+        font-size: 10px
+    .wrapper section.intro_details
+            .intro
+                h2
+                    font-size: 3.5em
+                    line-height: 2
+                p
+                    padding-right: 10px
+                    font-size: 2em;
+            .feature
+                background-position: right bottom
+    .wrapper section.feature_details 
+        header
+            padding-left: 55px
+            p
+                margin-left 80px
+        ul
+            li
+                width: 100%
+            li:nth-child(2n)
+                margin-right: 0
+            li:nth-child(2n-1)
+                margin-top: 0
+    .img
+        width: 100%!important
+        margin-top: 100px
+    .content
+        width: 100%!important
+    .section5
+        p
+            padding: 15px
+        img 
+            width: 100%
+    section.help 
+        div
+            padding: 20px
+    .main_nav_responsive
+        display: none;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+    body
+        font-size: 12px
+    .wrapper section.intro_details
+        background-color: #fbfbfb
+        position relative
+        z-index 100000
+        padding-top 120px
+        padding-bottom: 300px;
+        &::after
+            content: " ";
+            background-image: url(../img/dot_pttrn.png);
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            left: -15%;
+            border-radius: 50%;
+            top: -25%
+            z-index -1
+        .intro
+            h2  
+                color:#000
+                font-size: 4.167rem!important;
+                font-weight: bold
+            p
+                font-size: 2.5rem;
+                line-height: 1.5;
+                padding-right: 480px;
+    .wrapper section.feature_details 
+        ul
+            li
+                width: 50%!important
+            li:nth-child(2n)
+                margin-right: -1px
+            li:nth-child(2n-1)
+                margin-top: -65px
+    .img
+        width: 50%!important
+        margin-top: 0px
+    .content
+        width: 50%!important  
+    .section5
+        p
+            padding: 5px 150px;
+        img 
+            width: 50%  
+    section.help 
+        div
+            padding: 70px 100px   
+    .main_nav_responsive
+        display: none
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+    body
+        font-size: 12px

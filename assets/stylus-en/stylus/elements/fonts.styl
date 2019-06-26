@@ -1,0 +1,49 @@
+
+
+fonts_default       = {
+  path                : '../font/'
+  families      : {
+
+    'IRANYekan'      : {
+
+      formats         : 'woff' 
+
+      src             : {
+        'Yekan Bakh Regular'   : {
+          weight        : normal
+        }
+        'Yekan Bakh Light'       : {
+          weight        : 200
+        }
+        'Yekan Bakh Bold'         : {
+          weight        : bold
+        }
+      }
+      
+    },
+        'roboto'      : {
+
+      formats         : 'eot' 'woff' 'woff2' 'ttf' 'svg'
+
+      src             : {
+        'robotoregular'   : {
+          weight        : normal
+        }
+        'robotolight'       : {
+          weight        : 200
+        }
+        'robotobold'         : {
+          weight        : bold
+        }
+      }
+      
+    }
+
+  }
+}
+
+fonts = extend(fonts_default, fonts)
+
+for name, font in fonts.families
+  for path, prop in font.src
+    font-face( name: name, font-src: pathjoin(fonts.path, path), weight: prop.weight, style: prop.style, formats: font.formats )
