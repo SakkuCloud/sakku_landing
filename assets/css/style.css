@@ -9,6 +9,14 @@ header.main_header {
 header.main_header .logo {
   margin-top: 35px;
 }
+header.main_header .english a {
+  font-family: Domine;
+}
+header.main_header .english a img {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 header.main_header .main_nav {
   margin-top: 35px;
 }
