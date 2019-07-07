@@ -9,6 +9,14 @@ header.main_header {
 header.main_header .logo {
   margin-top: 35px;
 }
+header.main_header .english a {
+  font-family: Domine;
+}
+header.main_header .english a img {
+  height: 20px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
 header.main_header .main_nav {
   margin-top: 35px;
 }
@@ -649,10 +657,11 @@ section.help div p a {
   }
   .wrapper section.feature_details header h3 {
     margin-right: 25px;
+    font-size: 3em;
   }
   .wrapper section.feature_details header p {
     font-size: 1.5em;
-    margin-right: 60px;
+    margin-right: 40px;
   }
   .wrapper section.feature_details header img {
     margin-top: 26px;
@@ -702,7 +711,7 @@ section.help div p a {
     padding-top: 50px;
   }
   .registration div input {
-    width: 325px;
+    width: 290px;
     margin-bottom: 20px;
   }
   section.help div {
@@ -716,6 +725,9 @@ section.help div p a {
   }
   footer div img {
     width: 100%;
+  }
+  section .content p {
+    padding: 0 15px !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -734,7 +746,7 @@ section.help div p a {
     background-position: left bottom;
   }
   .wrapper section.feature_details header {
-    padding-right: 55px;
+    padding-right: 90px;
   }
   .wrapper section.feature_details header p {
     margin-right: 80px;
