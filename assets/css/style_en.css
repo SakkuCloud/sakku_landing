@@ -1710,16 +1710,12 @@ header.main_header {
 header.main_header .logo {
   margin-top: 35px;
 }
-header.main_header .main_nav_responsive .farsi a,
-header.main_header .main_nav .farsi a {
-  font-family: IRANYekan;
-}
 header.main_header .main_nav_responsive .farsi a img,
 header.main_header .main_nav .farsi a img {
   height: 20px;
 /* width: 100%; */
 /* padding-top: 20px; */
-  vertical-align: middle;
+  vertical-align: sub;
   margin-left: 5px;
 }
 header.main_header .main_nav {
