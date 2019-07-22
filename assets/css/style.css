@@ -55,8 +55,6 @@ header.main_header .main_nav li.register a {
   z-index: 100000;
   padding-top: 120px;
   padding-bottom: 300px;
-  min-height: -webkit-calc(100vh - 67px);
-  min-height: calc(100vh - 67px);
 }
 .wrapper section.intro_details::after {
   content: " ";
@@ -569,70 +567,7 @@ section.help div p a {
 .alert-msg.danger_error {
   color: #ff7373;
 }
-.error_box {
-  padding-top: 30%;
-  padding-right: 160px;
-  padding-left: 160px;
-}
-.error_box div.right_box {
-  float: right;
-  width: 55%;
-}
-.error_box div.right_box h2 {
-  color: #227ae8;
-  font-size: 5rem;
-  font-weight: bold;
-  line-height: 0.8;
-  vertical-align: middle;
-  margin-bottom: 25px;
-}
-.error_box div.right_box h2.bigger {
-  font-size: 10rem;
-}
-.error_box div.right_box p {
-  font-size: 1.833rem;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-.error_box div.right_box p.bold {
-  font-weight: bold;
-}
-.error_box div.right_box p a {
-  font-weight: bold;
-}
-.error_box div.right_box p:last-child {
-  font-size: 1.667rem;
-}
-.error_box div.left_box {
-  float: right;
-  width: 43%;
-  margin-right: 2%;
-}
-.error_box div.left_box img {
-  width: 100%;
-  margin-top: -180px;
-}
 @media only screen and (width: 769px) {
-  .wrapper section.intro_details.error_box {
-    padding-top: 40%;
-  }
-  .wrapper section.intro_details.error_box div.right_box {
-    width: 100%;
-    text-align: center;
-  }
-  .wrapper section.intro_details.error_box div.right_box h2 {
-    font-size: 2.917rem;
-  }
-  .wrapper section.intro_details.error_box div.right_box h2.bigger {
-    font-size: 5rem;
-  }
-  .wrapper section.intro_details.error_box div.right_box p {
-    line-height: 1.5;
-  }
-  .wrapper section.intro_details.error_box div.left_box {
-    width: 100%;
-    margin-top: 150px;
-  }
   body {
     font-size: 10px !important;
   }
@@ -796,26 +731,6 @@ section.help div p a {
   }
 }
 @media only screen and (max-width: 769px) {
-  .wrapper section.intro_details.error_box {
-    padding-top: 40%;
-  }
-  .wrapper section.intro_details.error_box div.right_box {
-    width: 100%;
-    text-align: center;
-  }
-  .wrapper section.intro_details.error_box div.right_box h2 {
-    font-size: 2.917rem;
-  }
-  .wrapper section.intro_details.error_box div.right_box h2.bigger {
-    font-size: 5rem;
-  }
-  .wrapper section.intro_details.error_box div.right_box p {
-    line-height: 1.5;
-  }
-  .wrapper section.intro_details.error_box div.left_box {
-    width: 100%;
-    margin-top: 150px;
-  }
   body {
     font-size: 10px !important;
   }
@@ -980,9 +895,6 @@ section.help div p a {
   }
 }
 @media only screen and (min-width: 769px) {
-  .wrapper section.intro_details.error_box {
-    padding-top: 25%;
-  }
   body {
     font-size: 10px;
   }
@@ -1033,9 +945,6 @@ section.help div p a {
   }
 }
 @media only screen and (min-width: 992px) {
-  .wrapper section.intro_details.error_box {
-    padding-top: 25%;
-  }
   body {
     font-size: 12px;
   }
@@ -1097,9 +1006,6 @@ section.help div p a {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .wrapper section.intro_details.error_box {
-    padding-top: 25%;
-  }
   body {
     font-size: 12px;
   }

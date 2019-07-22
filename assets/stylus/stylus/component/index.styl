@@ -48,7 +48,6 @@ header.main_header
         z-index 100000
         padding-top 120px
         padding-bottom: 300px;
-        min-height: calc('100vh - 67px');
         &::after
             content: " ";
             background-image: url(../img/dot_pttrn.png);
@@ -479,38 +478,4 @@ section.help
     margin-bottom: 0!important
     &.danger_error
         color:#ff7373
-.error_box
-    padding-top: 30%!important
-    padding-right: 160px
-    padding-left: 160px
-    div.right_box
-        float: right
-        width: 55%
-        
-        h2
-            color: #227ae8;
-            font-size: rem(60px);
-            font-weight: bold;
-            line-height: .8;
-            vertical-align: middle;
-            margin-bottom: 25px
-            &.bigger
-                font-size: rem(120px)
-        p
-            font-size: rem(22px)
-            line-height: 1
-            margin-bottom 15px
-            &.bold
-                font-weight: bold
-            a   
-                font-weight: bold
-        p:last-child
-            font-size: rem(20px)
-    div.left_box
-        float right
-        width: 43%
-        margin-right: 2%
-        img
-            width: 100%;
-            margin-top: -180px;
 @import './responsive.styl'
