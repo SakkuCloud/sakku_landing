@@ -471,7 +471,8 @@ header.main_header .main_nav li.register a {
 .registration div input:focus {
   border-color: #fff;
 }
-.registration div button {
+.registration div button,
+.registration div a {
   border: none;
   z-index: 10000;
   outline: none;
@@ -487,7 +488,8 @@ header.main_header .main_nav li.register a {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.registration div button:hover {
+.registration div button:hover,
+.registration div a:hover {
   background-color: #ffc32c;
 }
 section.help {
